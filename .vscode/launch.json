@@ -1,0 +1,65 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python Debugger: Current File",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "(gdb) Launch",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "/mnt/c/Users/William/Desktop/UniFiles/USYD/2024-Semester2/Operating System Internals/assignment_2_2/run_me",
+      "args": [
+        "/mnt/c/Users/William/Desktop/UniFiles/USYD/2024-Semester2/Operating System Internals/assignment_2_2/optimiseInput.txt"
+      ],
+      "stopAtEntry": false,
+      "cwd": "/mnt/c/Users/William/Desktop/UniFiles/USYD/2024-Semester2/Operating System Internals/assignment_2_2",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Set Disassembly Flavor to Intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
+        }
+      ]
+    },
+    {
+      "type": "gdb",
+      "request": "launch",
+      "name": "Launch Program",
+      "target": "./run_me",
+      "cwd": "${workspaceRoot}",
+      "valuesFormatting": "parseText"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": false,
+      "cwd": "/mnt/c/Users/William/Desktop/UniFiles/USYD/2024-Semester2/Operating System Internals/assignment_2_2",
+      "program": "/mnt/c/Users/William/Desktop/UniFiles/USYD/2024-Semester2/Operating System Internals/assignment_2_2/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
