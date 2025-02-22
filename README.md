@@ -11,7 +11,13 @@ Developed a multi-level queue scheduler for a uniprocessor system, implementing 
 
 ### Built With
 <a href="">
+  <img src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" alt="C">
+</a>
+<a href="">
   <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="python">
+</a>
+<a href="">
+  <img src="https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white" alt="python">
 </a>
 
 ## Getting Started
