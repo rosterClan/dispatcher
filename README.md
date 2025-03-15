@@ -7,7 +7,21 @@
 </div>
 
 ## About The Project
-Developed a multi-level queue scheduler for a uniprocessor system, implementing FCFS and Round Robin scheduling with priority downgrading, preemption, and starvation prevention. Calculated turnaround time, waiting time, and response time.
+This project implements a **Multi-Level Queue (MLQ) Dispatcher** for a **uniprocessor system**, simulating job scheduling with priority-based queues. The dispatcher schedules randomly generated jobs based on their **arrival time, execution time, and priority (0, 1, or 2)**.  
+
+## Features  
+
+- **Three-Level Ready Queue**  
+  - **Level-0:** First Come First Served (FCFS) with highest priority.  
+  - **Level-1:** FCFS, pre-empted by Level-0 jobs, and demoted to Level-2 if not completed in time.  
+  - **Level-2:** Round Robin (RR), pre-empted by higher-priority jobs, and recycled if unfinished.  
+
+- **Starvation Prevention**  
+  - Jobs waiting too long in lower levels are promoted back to Level-0.  
+
+- **Performance Metrics**  
+  - Calculates **average turnaround time, waiting time, and response time**.  
+
 
 ### Built With
 <a href="">
