@@ -1,8 +1,5 @@
 <br />
 <div align="center">
-  <a href="">
-    <img src=" " alt="Logo">
-  </a>
   <h3 align="center">Multi-level Frequency Queue CPU Dispatcher</h3>
 </div>
 
